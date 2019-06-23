@@ -1,0 +1,39 @@
+
+<div class="row">
+
+  <div class="col">
+    <h1>*ngIf</h1>
+    <hr>
+    <div *ngIf=mostrar class="card text-white bg-primary mb-3" style="width: 100%;">
+      <div class="card-header">Titulo</div>
+        <div class="card-body">
+          <h5 class="card-title">{{frase.autor}}</h5>
+          <p class="card-text">{{frase.mensaje}}</p>
+        </div>
+    </div>
+      <button (click)="mostrar = !mostrar" class="btn btn-outline-primary btn-block">
+        Mostrar/Ocultar
+      </button>
+  </div>
+
+  <div class="col">
+    <h1>*ngFor</h1>
+    <hr>
+
+    <ul class="list-group">
+      <li *ngFor="let personaje of personajes; let i = index" class="list-group-item">{{i+1}} {{ personaje}}</li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="card-columns">
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
