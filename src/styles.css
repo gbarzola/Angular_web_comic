@@ -7,6 +7,11 @@ footer{
   width: 100%;
 }
 
+.tarjetas{
+  margin-top: 20px;
+  margin-bottom: 80px;  
+}
+
 /*Animaciones*/
 .animated {
   -webkit-animation-duration: 1s;
